@@ -1,0 +1,20 @@
+<?php
+
+
+/**
+ * @file
+ *
+ * Miscellaneous custom code for the BDP site.
+ *
+ */
+
+
+/**
+ * Implements hook_views_api().
+ */
+function bdp_site_views_api() {
+  return array(
+    'api'  => 3,
+    'path' => drupal_get_path('module', 'bdp_site') . '/views',
+  );
+}
